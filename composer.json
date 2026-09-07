@@ -1,0 +1,31 @@
+{
+    "name": "oscar-rivera/php-ddd-reference-app",
+    "description": "Hexagonal / DDD reference: warehouse reservation of catalog products.",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.2",
+        "ext-mbstring": "*",
+        "ext-pdo": "*",
+        "ext-pdo_sqlite": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Warehouse\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Warehouse\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
